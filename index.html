@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="Welcome">Welcome to the Grocery Store</h1>
+    <div class="div">
+    <button type="button" id="loginButton" class="btn btn-outline-light">login</button>
+    <button type="button" id="signin" class="btn btn-outline-light">Sign Up</button>
+    </div>
+
+<style>
+  body{
+    background-color: black;
+  }
+
+  .Welcome{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+  }
+
+  #loginButton{
+    text-align: center;
+  }
+
+  .div{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #signin:hover{
+    color: black;
+}
+</style>
+  
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  const loginButton = document.getElementById('loginButton');
+  const SignupButton = document.getElementById('signin');
+  const order=document.getElementById('order');
+  
+  SignupButton.addEventListener('click', function () {
+      // Redirect to the signup page
+      window.location.href = 'signin.html';
+    });
+
+  loginButton.addEventListener('click', function () {
+  // Redirect to the login page
+  window.location.href = 'login.html';
+    });
+});
+
+    </script>
+</body>
+</html>

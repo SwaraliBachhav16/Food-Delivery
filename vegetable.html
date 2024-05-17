@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-home"></i> Home
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">
+            <i class="fas fa-shopping-cart id=cart"></i> Order
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="trackorder.html">
+            <i class="fas fa-shopping-basket"></i> List
+          </a>
+        </li>
+       
+      </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  
+  <div class="iteam">
+    <div class="card">
+      <img src="vegtables/onion.jpeg" height="200px" class="card-img-top" alt="female jeans">
+      <div class="card-body">
+        <li><a href="vegetable.html">onion</a></li>
+        <p>Price:20 rs/kilo</p>
+        <input type="number" placeholder="kg you want to buy"><br><br>
+        <button>Add to cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="iteam">
+    <div class="card">
+      <img src="vegtables/carrot.jpeg" height="200px" class="card-img-top" alt="milk">
+      <div class="card-body">
+        <li><a href="masala.html">carrot</a></li>
+        <p>Price:15 rs/kilo</p>
+        <input type="number" placeholder="kg you want to buy" ><br><br>
+        <button >Add to cart</button>
+        
+      </div>
+    </div>
+</div>
+
+  <div class="iteam"  >
+    <div class="card" >
+      <img src="vegtables/casisum.jpeg" height="200px" class="card-img-top" alt="female tshirts">
+      <div class="card-body">
+          <li><a href="milk.html">Capsicum</a></li>
+          <p>Price:20 rs/kilo</p>
+          <input type="number" placeholder="kg you want to buy" ><br><br>
+          <button>Add to cart</button>
+         
+         </div>
+    </div>
+  </div>
+
+  <div class="iteam">
+      <div class="card">
+        <img src="vegtables/lp.jpeg" height="200px" class="card-img-top" alt="female jeans">
+        <div class="card-body">
+          <li><a href="chips.html">lady Finger</a></li>
+          <p>Price:10 rs/kilo</p>
+          <input type="number" placeholder="kg you want to buy"><br><br>
+          <button>Add to cart</button>
+         
+          
+        </div>
+      </div>
+  </div>
+
+  <div class="iteam">
+    <div class="card">
+      <img src="vegtables/p.jpeg" height="200px" class="card-img-top" alt="female jeans">
+      <div class="card-body">
+        <li><a href="oil.html">Potato</a></li>
+        <p>Price:20 rs/kilo</p>
+        <input type="number" placeholder="kg you want to buy" ><br><br>
+        <button >Add to cart</button>
+         
+      </div>
+    </div>
+</div>
+
+<div class="iteam">
+  <div class="card">
+    <img src="vegtables/t.jpeg" height="200px" class="card-img-top" alt="female jeans">
+    <div class="card-body">
+      <li><a href="sugar.html">Tomato</a></li>
+      <p>Price:15 rs/kilo</p>
+      <input type="number" placeholder="kg you want to buy" ><br><br>
+      <button >Add to cart</button>
+    </div>
+  </div>
+</div>
+
+ <style>
+
+
+
+  body{
+    background-color: white
+  }
+
+  
+.iteam{
+    display:inline-flex;
+    margin:50px 50px 50px 200px;
+    border:3px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    
+    
+}
+
+.iteam:hover{
+    box-shadow:4px 4px 15px black;
+}
+
+.card{
+    width: 300px;
+    
+}
+
+</style>
+
+<script>
+    
+const searchBox=document.querySelectorAll(".card-body input");
+const searchbtn=document.querySelectorAll(".card-body button");
+
+searchbtn.addEventListener("click",()=>{
+   console.log(searchBox.value);
+})
+
+</script>
+
+</body>
+</html>
